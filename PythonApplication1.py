@@ -1,7 +1,6 @@
 import hashlib
 import re
-info = input("message:")
-sha512_hash = hashlib.sha512(info.encode()).hexdigest()
+sha512_hash = hashlib.sha512(input("message:").encode()).hexdigest()
 print(sha512_hash)
 name_long = int(input("name_long:"))
 name = sha512_hash[0:name_long]
