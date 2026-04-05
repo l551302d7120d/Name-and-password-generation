@@ -10,3 +10,4 @@ sha512_hash = sha512_hash[::-1]
 print("key:"+sha512_hash[0:key_long])
 pin_sha512_hash = re.sub(r"\D", "", sha512_hash)
 print("pin:"+pin_sha512_hash[0:6])
+end = input()
